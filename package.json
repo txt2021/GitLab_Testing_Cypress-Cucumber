@@ -1,0 +1,21 @@
+{
+  "name": "cypress-cucumber-GitLab",
+  "version": "2.0.0",
+  "description": "This project for testing GitLab website with the help of cypress and cucumber frameworks",
+  "scripts": {
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run --env allure=true",
+    "cypress:proc": "npm install --save-dev cypress-cucumber-preprocessor",
+    "report-generate": "allure generate allure-results --clean -o allure-report",
+    "report-open":"npx allure open allure-report"
+  },
+  "author": "txt2021",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^12.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.3",
+    "@shelex/cypress-allure-plugin": "^2.33.1",
+    "cypress": "^10.4.0",
+    "esbuild": "^0.14.48"
+  }
+}
